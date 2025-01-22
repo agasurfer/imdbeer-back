@@ -11,7 +11,14 @@ const Comments = require("./models/Comments")
 //Middlewares
 
 app.use(express.json());
-app.use(cors());
+
+const corsOptions = {
+    origin: ["http://localhost:5173", "https://imdbeer-front.vercel.app"], // Replace with your frontend domain
+    methods: "GET,POST,DELETE",
+    allowedHeaders: "Content-Type,Authorization",
+};
+
+app.use(cors(corsOptions));
 
 //Connection to mongoDB ATLAS
 
