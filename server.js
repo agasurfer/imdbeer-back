@@ -13,7 +13,7 @@ const Comments = require("./models/Comments")
 app.use(express.json());
 
 const corsOptions = {
-    origin: ["http://localhost:5173", "https://imdbeer-front.vercel.app"], // Replace with your frontend domain
+    origin: ["http://localhost:5173", "https://imdbeer-front.vercel.app"], 
     methods: "GET,POST,DELETE",
     allowedHeaders: "Content-Type,Authorization",
 };
@@ -27,7 +27,7 @@ mongoose.connect(process.env.ATLAS_URI)
     .catch((err) => console.error("MongoDB connection error:", err));
 
 // Test route
-    app.get("/", (req, res) => {
+app.get("/", (req, res) => {
     res.send("API is running!");
 });
 
@@ -38,7 +38,7 @@ app.get("/styles", async (req, res) => {
         res.json(styles); 
     } catch (err) {
         console.error("Error fetching styles:", err.message);
-        res.status(500).json({ error: "Internal Server Error" });
+        res.status(500).json({ err: err.message });
     }
 });
 
