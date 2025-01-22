@@ -1,1 +1,1 @@
-# imd-but-back
+# Backend for a Beer styles API
