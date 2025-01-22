@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
   "dockerfilePath": "./Dockerfile",
-  "captainServiceName": "imdbeer-backend",
+  "captainServiceName": "ilias-imdbeer",
   "httpPort": 3000
 }
