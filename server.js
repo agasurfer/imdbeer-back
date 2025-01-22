@@ -28,7 +28,7 @@ mongoose.connect(process.env.ATLAS_URI)
 
 // Test route
 app.get("/", (req, res) => {
-    res.send("API is running!");
+    res.send(process.env.TEST);
 });
 
 //Routes
