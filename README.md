@@ -1,6 +1,6 @@
 # 🍻 Beer Styles Wiki API
 
-A simple, well-structured RESTful API that serves as a searchable database for beer styles based on BJCP (Beer Judge Certification Program) data. Built with Node.js, Express, and MongoDB, the API allows developers to fetch detailed information about beer styles for use in apps, websites, or homebrewing tools.
+A simple, well-structured RESTful API that serves as a searchable database for beer styles based on BJCP (Beer Judge Certification Program) data. Built with Node.js, Express, and MongoDB, the API allows developers to fetch detailed information about beer styles for use in apps, websites.
 
 > Data is manually curated from the official BJCP Style Guidelines and hosted in a MongoDB Atlas database.
 > I made this as a CRUD exercise, the adding, and deleting of comments are accessible by anyone.
